@@ -1,0 +1,468 @@
+html{
+  scroll-behavior: smooth;
+}
+body{
+transition:0.4s;
+background:white;
+color:black;
+}
+body.dark{
+
+background:#0d1117;
+color:white;
+
+}
+.nav-sty{
+     /* background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05); */
+  background: linear-gradient(360deg, #317ff5, #05c6fc);
+  transition: 0.4s;
+}
+
+.logo1 img {
+    width: 60px;
+    height: 60px;
+}
+
+.nav2 a {
+    text-decoration: none;
+    color: black;
+}
+
+.sidebr {
+    margin-left: 15vh;
+}
+
+.head {
+    background-image: url(../img/hero_1\ \(1\).jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    padding-top: 30vh;
+}
+
+.head h1 {
+    font-size: 40px;
+}
+.head h3{
+    animation: slideUp 2s ease forwards;
+    opacity: 0;
+}
+.head h3{
+    animation: slideUp 2s ease forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+}
+
+.services {
+padding: 80px 0;
+/* background: #f8f9fa; */
+text-align: center;
+}
+
+.services h2 {
+font-weight: bold;
+margin-bottom: 50px;
+}
+
+/* Card */
+
+.service-box {
+/* background: white; */
+padding: 30px;
+border-radius: 10px;
+box-shadow: 0 0 15px rgba(0,0,0,0.1);
+transition: 0.4s;
+position: relative;
+overflow: hidden;
+}
+
+/* Hover animation */
+
+.service-box:hover {
+transform: translateY(-10px);
+box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* Hexagon */
+
+.hexagon {
+
+width: 70px;
+height: 70px;
+background: #ff4a17;
+margin: auto;
+margin-top: -60px;
+margin-bottom: 20px;
+
+clip-path: polygon(
+25% 0%, 
+75% 0%, 
+100% 50%, 
+75% 100%, 
+25% 100%, 
+0% 50%
+);
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+color: white;
+font-size: 25px;
+
+transition: 0.4s;
+}
+
+/* Icon animation */
+
+.service-box:hover .hexagon {
+
+transform: rotate(360deg);
+background: black;
+
+}
+
+.service-box h4 {
+
+font-weight: bold;
+margin-bottom: 15px;
+
+}
+
+.service-box p {
+
+color: gray;
+font-size: 14px;
+
+}
+
+
+.card {
+  width: 190px;
+  height: 254px;
+  color: white;
+  margin-left: 10vh;
+  overflow: visible;
+  margin-top: 70px;
+}
+
+.card .item {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.item:hover {
+  transform: scale(1.5);
+  transition: all 350ms ease-in-out;
+}
+
+.item svg {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 7px;
+}
+.item{
+ margin: 10px 0;
+}
+.item--1 {
+  background: #c7c7ff;
+  padding: 10px;
+}
+
+.item--2 {
+  background: #ffd8be;
+}
+
+.item--3 {
+  background: #a9ecbf;
+}
+
+.item--4 {
+  background: #f3bbe1;
+}
+
+.quantity {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.text {
+  font-size: 12px;
+  font-family: inherit;
+  font-weight: 600;
+}
+
+.text--1 {
+  color: rgba(149, 149, 255, 1);
+}
+
+.text--2 {
+  color: rgba(252, 161, 71, 1);
+}
+
+.text--3 {
+  color: rgba(66, 193, 110, 1);
+}
+
+.text--4 {
+  color: rgba(220, 91, 183, 1);
+}
+
+.skills-section{
+padding:80px 0;
+/* background:#f8f9fa; */
+}
+
+.description{
+max-width:600px;
+margin:auto;
+color:gray;
+}
+.skill{
+margin-bottom:30px;
+}
+
+
+.skill label{
+font-weight:600;
+display:flex;
+justify-content:space-between;
+margin-bottom:5px;
+}
+
+.progress{
+height:8px;
+/* background:#ddd; */
+border-radius:10px;
+overflow:hidden;
+
+}
+.progress-bar{
+width:0;
+background:#0d6efd;
+transition:2s;
+}
+
+/* contact */
+.contact-pro {
+  /* background: linear-gradient(135deg, #f8f9fa, #eef2f7); */
+}
+
+/* LEFT SIDE */
+.contact-left h2 {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.contact-left p {
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+
+.info-box p {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.info-box i {
+  color: #0d6efd;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+/* RIGHT SIDE CARD */
+.contact-card {
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+
+/* INPUT STYLE */
+.pro-input {
+  border-radius: 10px;
+  padding: 14px;
+  border: 1px solid #ddd;
+  transition: 0.3s;
+}
+
+.pro-input:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 8px rgba(13,110,253,0.2);
+}
+
+/* BUTTON */
+.pro-btn {
+  background: linear-gradient(135deg, #0d6efd, #0a58ca);
+  color: #fff;
+  padding: 14px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.pro-btn:hover {
+  transform: scale(1.03);
+  background: linear-gradient(135deg, #0a58ca, #084298);
+}
+
+
+
+.edu-title {
+            color: #3b71ca;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        /* Clean accordion style */
+        .accordion-item {
+            border: none;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .accordion-button {
+            padding: 1.5rem 0; /* Removing side padding to match image */
+            background-color: transparent !important;
+            box-shadow: none !important;
+            color: #3b71ca !important;
+            font-weight: 500;
+        }
+
+        .accordion-button:not(.collapsed) {
+            border-bottom: 0;
+        }
+
+        .accordion-body {
+            padding-left: 0;
+            color: #666;
+            line-height: 1.6;
+        }
+
+
+
+@keyframes slideUp{
+    from{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.project-card{
+position:relative;
+display:block;
+overflow:hidden;
+border-radius:10px;
+}
+
+.project-card img{
+width:100%;
+transition:0.5s;
+}
+
+.overlay{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.6);
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+font-size:22px;
+opacity:0;
+transition:0.5s;
+}
+
+.project-card:hover img{
+transform:scale(1.1);
+}
+
+.project-card:hover .overlay{
+opacity:1;
+}
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+    .logo1 img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .sidebr {
+        margin-left: 80vh;
+    }
+  
+.card {
+    display: flex;
+ 
+  gap: 5px;
+  margin-left: 50vh;
+}
+
+  .contact-left {
+    text-align: center;
+  }
+
+  .contact-left h2 {
+    font-size: 28px;
+  }
+}
+
+
+@media only screen and (min-width: 992px) {
+    .naav a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .head h1 {
+        font-size: 90px;
+    }
+
+    .head h3 {
+        font-size: 45px;
+    }
+
+    .head h6 {
+        font-size: 20px;
+    }
+.logo2{
+    margin-left: 48vh; 
+margin-top: 10vh;
+}
+
+.card{
+    margin-left: 90vh;
+}
+
+.edu-name{
+    margin: 10vh 80vh;
+}
+
+
+
+}
